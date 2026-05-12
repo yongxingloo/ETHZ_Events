@@ -4,8 +4,9 @@ const facultyToggles = document.querySelector("#faculty-toggles");
 const resultCount = document.querySelector("#result-count");
 let allEvents = [];
 let activeFaculty = "";
+const eventsDataUrl = new URL("./data/events.json", import.meta.url);
 
-fetch("/data/events.json").then((response) => response.json()).then((eventSnapshot) => {
+fetch(eventsDataUrl).then((response) => response.json()).then((eventSnapshot) => {
   allEvents = eventSnapshot.events.filter(isTodayOrUpcoming);
   renderFacultyToggles(uniqueSorted(allEvents.map((event) => event.affiliation)));
   renderEvents(allEvents);
