@@ -55,11 +55,12 @@ function renderFacultyToggles(values) {
   const toggles = values
     .map((value) => {
       const label = formatFacultyLabel(value);
+      const facultyKey = toFacultyKey(value);
       const isActive = value === activeFaculty;
-      return `<button type="button" class="faculty-toggle${isActive ? " is-active" : ""}" data-faculty="${escapeAttribute(value)}">${escapeHtml(label)}</button>`;
+      return `<button type="button" class="faculty-toggle${isActive ? " is-active" : ""}" data-faculty="${escapeAttribute(value)}" data-faculty-key="${escapeAttribute(facultyKey)}">${escapeHtml(label)}</button>`;
     })
     .join("");
-  facultyToggles.innerHTML = `<button type="button" class="faculty-toggle${activeFaculty === "" ? " is-active" : ""}" data-faculty="">All</button>${toggles}`;
+  facultyToggles.innerHTML = `<button type="button" class="faculty-toggle${activeFaculty === "" ? " is-active" : ""}" data-faculty="" data-faculty-key="all">All</button>${toggles}`;
 }
 
 function handleFacultyToggleClick(event) {
@@ -86,12 +87,13 @@ function uniqueSorted(values) {
 function renderEventCard(event) {
   const whenLabel = formatEventWhen(event.start);
   const facultyLabel = formatFacultyLabel(event.affiliation);
+  const facultyKey = toFacultyKey(event.affiliation);
 
   return `
     <article class="event-card">
       <div class="event-main">
         <div class="event-meta">
-          <span class="badge faculty-label">${escapeHtml(facultyLabel)}</span>
+          <span class="badge faculty-label" data-faculty-key="${escapeAttribute(facultyKey)}">${escapeHtml(facultyLabel)}</span>
         </div>
         <h3 class="event-title">${escapeHtml(event.title)}</h3>
         <p class="event-summary">${escapeHtml(event.summary)}</p>
@@ -208,6 +210,14 @@ function formatFacultyLabel(value) {
   const code = String(value || "ETH Zurich").trim();
   const fullName = FACULTY_NAMES[code];
   return fullName ? `${code} - ${fullName}` : code;
+}
+
+function toFacultyKey(value) {
+  return String(value || "ETH Zurich")
+    .trim()
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "");
 }
 
 const FACULTY_NAMES = {

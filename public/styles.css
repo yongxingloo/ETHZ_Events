@@ -83,10 +83,10 @@ a {
 
 .faculty-toggle {
   padding: 0.55rem 0.85rem;
-  border: 1px solid var(--line);
+  border: 1px solid var(--faculty-line, var(--line));
   border-radius: 999px;
-  background: var(--panel);
-  color: var(--muted);
+  background: var(--faculty-bg, var(--panel));
+  color: var(--faculty-ink, var(--muted));
   font: inherit;
   font-size: 0.83rem;
   line-height: 1.2;
@@ -95,14 +95,14 @@ a {
 }
 
 .faculty-toggle:hover {
-  color: var(--ink);
-  border-color: var(--accent);
+  color: var(--faculty-hover-ink, var(--ink));
+  border-color: var(--faculty-hover-line, var(--accent));
 }
 
 .faculty-toggle.is-active {
-  color: var(--bg);
-  background: var(--accent);
-  border-color: var(--accent);
+  color: var(--faculty-active-ink, var(--bg));
+  background: var(--faculty-active-bg, var(--accent));
+  border-color: var(--faculty-active-line, var(--accent));
 }
 
 .event-grid {
@@ -143,12 +143,197 @@ a {
   display: inline-flex;
   align-items: center;
   padding: 0.3rem 0.65rem;
-  background: var(--chip);
+  background: var(--faculty-bg, var(--chip));
+  border: 1px solid var(--faculty-line, transparent);
   border-radius: 999px;
-  color: var(--accent);
+  color: var(--faculty-ink, var(--accent));
   font-size: 0.73rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
+}
+
+.faculty-toggle[data-faculty-key="all"] {
+  --faculty-bg: var(--panel);
+  --faculty-line: var(--line);
+  --faculty-ink: var(--muted);
+  --faculty-hover-ink: var(--ink);
+  --faculty-hover-line: var(--accent);
+  --faculty-active-bg: #d3c9ff;
+  --faculty-active-line: #d3c9ff;
+  --faculty-active-ink: #101315;
+}
+
+.faculty-toggle[data-faculty-key="d-arch"],
+.faculty-label[data-faculty-key="d-arch"] {
+  --faculty-bg: #1f2630;
+  --faculty-line: #4c78a8;
+  --faculty-ink: #9ec5f8;
+}
+
+.faculty-toggle[data-faculty-key="d-baug"],
+.faculty-label[data-faculty-key="d-baug"] {
+  --faculty-bg: #2a241c;
+  --faculty-line: #f28e2b;
+  --faculty-ink: #f7c78d;
+}
+
+.faculty-toggle[data-faculty-key="d-bsse"],
+.faculty-label[data-faculty-key="d-bsse"] {
+  --faculty-bg: #1f2926;
+  --faculty-line: #59a14f;
+  --faculty-ink: #a7d8a1;
+}
+
+.faculty-toggle[data-faculty-key="d-chab"],
+.faculty-label[data-faculty-key="d-chab"] {
+  --faculty-bg: #2a1f25;
+  --faculty-line: #e15759;
+  --faculty-ink: #f0a3a4;
+}
+
+.faculty-toggle[data-faculty-key="d-eaps"],
+.faculty-label[data-faculty-key="d-eaps"] {
+  --faculty-bg: #1d2a2b;
+  --faculty-line: #76b7b2;
+  --faculty-ink: #add9d5;
+}
+
+.faculty-toggle[data-faculty-key="d-hest"],
+.faculty-label[data-faculty-key="d-hest"] {
+  --faculty-bg: #2a231b;
+  --faculty-line: #edc948;
+  --faculty-ink: #f3dd8d;
+}
+
+.faculty-toggle[data-faculty-key="d-infk"],
+.faculty-label[data-faculty-key="d-infk"] {
+  --faculty-bg: #222033;
+  --faculty-line: #b07aa1;
+  --faculty-ink: #d6b2cb;
+}
+
+.faculty-toggle[data-faculty-key="d-itet"],
+.faculty-label[data-faculty-key="d-itet"] {
+  --faculty-bg: #20272e;
+  --faculty-line: #9c755f;
+  --faculty-ink: #d0b2a4;
+}
+
+.faculty-toggle[data-faculty-key="d-math"],
+.faculty-label[data-faculty-key="d-math"] {
+  --faculty-bg: #25262a;
+  --faculty-line: #bab0ab;
+  --faculty-ink: #ddd6d2;
+}
+
+.faculty-toggle[data-faculty-key="d-matl"],
+.faculty-label[data-faculty-key="d-matl"] {
+  --faculty-bg: #1f2530;
+  --faculty-line: #4e79a7;
+  --faculty-ink: #9fc0e6;
+}
+
+.faculty-toggle[data-faculty-key="d-mavt"],
+.faculty-label[data-faculty-key="d-mavt"] {
+  --faculty-bg: #2b241e;
+  --faculty-line: #f28e2b;
+  --faculty-ink: #f5c48f;
+}
+
+.faculty-toggle[data-faculty-key="d-mtec"],
+.faculty-label[data-faculty-key="d-mtec"] {
+  --faculty-bg: #1f2824;
+  --faculty-line: #59a14f;
+  --faculty-ink: #a5d39f;
+}
+
+.faculty-toggle[data-faculty-key="d-phys"],
+.faculty-label[data-faculty-key="d-phys"] {
+  --faculty-bg: #2a1f22;
+  --faculty-line: #e15759;
+  --faculty-ink: #f0a4a6;
+}
+
+.faculty-toggle[data-faculty-key="d-usys"],
+.faculty-label[data-faculty-key="d-usys"] {
+  --faculty-bg: #1d2829;
+  --faculty-line: #76b7b2;
+  --faculty-ink: #aed8d4;
+}
+
+.faculty-toggle[data-faculty-key="eth-entrepreneurship"],
+.faculty-label[data-faculty-key="eth-entrepreneurship"] {
+  --faculty-bg: #2a241b;
+  --faculty-line: #edc948;
+  --faculty-ink: #f0d98a;
+}
+
+.faculty-toggle[data-faculty-key="eth-library"],
+.faculty-label[data-faculty-key="eth-library"] {
+  --faculty-bg: #221f2a;
+  --faculty-line: #b07aa1;
+  --faculty-ink: #d5b3cb;
+}
+
+.faculty-toggle[data-faculty-key="eth-global"],
+.faculty-label[data-faculty-key="eth-global"] {
+  --faculty-bg: #20252b;
+  --faculty-line: #9c755f;
+  --faculty-ink: #cfb19f;
+}
+
+.faculty-toggle[data-faculty-key="quantum-center"],
+.faculty-label[data-faculty-key="quantum-center"] {
+  --faculty-bg: #25262a;
+  --faculty-line: #bab0ab;
+  --faculty-ink: #ded6d1;
+}
+
+.faculty-toggle[data-faculty-key="istp"],
+.faculty-label[data-faculty-key="istp"] {
+  --faculty-bg: #1f2530;
+  --faculty-line: #4e79a7;
+  --faculty-ink: #9ebfe5;
+}
+
+.faculty-toggle[data-faculty-key="map"],
+.faculty-label[data-faculty-key="map"] {
+  --faculty-bg: #2a241d;
+  --faculty-line: #f28e2b;
+  --faculty-ink: #f6c891;
+}
+
+.faculty-toggle[data-faculty-key="eth-zurich"],
+.faculty-label[data-faculty-key="eth-zurich"] {
+  --faculty-bg: #1f2630;
+  --faculty-line: #4e79a7;
+  --faculty-ink: #9ec1e8;
+}
+
+.faculty-toggle[data-faculty-key="d-arch"].is-active,
+.faculty-toggle[data-faculty-key="d-baug"].is-active,
+.faculty-toggle[data-faculty-key="d-bsse"].is-active,
+.faculty-toggle[data-faculty-key="d-chab"].is-active,
+.faculty-toggle[data-faculty-key="d-eaps"].is-active,
+.faculty-toggle[data-faculty-key="d-hest"].is-active,
+.faculty-toggle[data-faculty-key="d-infk"].is-active,
+.faculty-toggle[data-faculty-key="d-itet"].is-active,
+.faculty-toggle[data-faculty-key="d-math"].is-active,
+.faculty-toggle[data-faculty-key="d-matl"].is-active,
+.faculty-toggle[data-faculty-key="d-mavt"].is-active,
+.faculty-toggle[data-faculty-key="d-mtec"].is-active,
+.faculty-toggle[data-faculty-key="d-phys"].is-active,
+.faculty-toggle[data-faculty-key="d-usys"].is-active,
+.faculty-toggle[data-faculty-key="eth-entrepreneurship"].is-active,
+.faculty-toggle[data-faculty-key="eth-library"].is-active,
+.faculty-toggle[data-faculty-key="eth-global"].is-active,
+.faculty-toggle[data-faculty-key="quantum-center"].is-active,
+.faculty-toggle[data-faculty-key="istp"].is-active,
+.faculty-toggle[data-faculty-key="map"].is-active,
+.faculty-toggle[data-faculty-key="eth-zurich"].is-active {
+  --faculty-active-bg: var(--faculty-ink);
+  --faculty-active-line: var(--faculty-ink);
+  --faculty-active-ink: #101315;
 }
 
 .event-title {
