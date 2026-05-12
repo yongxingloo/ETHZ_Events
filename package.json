@@ -1,0 +1,11 @@
+{
+  "name": "ethz-events-hub",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "refresh": "node src/update-events.mjs",
+    "serve": "node server.mjs",
+    "start": "node server.mjs"
+  }
+}

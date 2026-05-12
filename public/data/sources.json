@@ -1,0 +1,680 @@
+{
+  "generatedAt": "2026-05-12T20:26:16.001Z",
+  "sources": [
+    {
+      "id": "eth-main-events",
+      "label": "ETH Zurich Main Events",
+      "affiliation": "ETH Zurich",
+      "url": "https://ethz.ch/en/campus/getting-to-know/discover/visit-by-yourself/events.html",
+      "status": "ok",
+      "warnings": [
+        "No public ETH calendar API link discovered on this page.",
+        "Only page-level fallback item available; this source likely needs a custom extractor."
+      ],
+      "socialProfiles": [
+        {
+          "url": "https://www.linkedin.com/school/eth-zurich/",
+          "text": ""
+        },
+        {
+          "url": "https://www.instagram.com/ethzurich/",
+          "text": ""
+        },
+        {
+          "url": "https://www.facebook.com/eth/",
+          "text": ""
+        },
+        {
+          "url": "https://www.youtube.com/user/ethzurich",
+          "text": ""
+        }
+      ],
+      "discoveredCalendarApis": [],
+      "discoveredIcsLinks": [],
+      "eventCount": 1
+    },
+    {
+      "id": "eth-main-event-search",
+      "label": "ETH Zurich Event Search",
+      "affiliation": "ETH Zurich",
+      "url": "https://ethz.ch/en/news-and-events/events.html",
+      "status": "ok",
+      "warnings": [],
+      "socialProfiles": [
+        {
+          "url": "https://www.linkedin.com/school/eth-zurich/",
+          "text": ""
+        },
+        {
+          "url": "https://www.instagram.com/ethzurich/",
+          "text": ""
+        },
+        {
+          "url": "https://www.facebook.com/eth/",
+          "text": ""
+        },
+        {
+          "url": "https://www.youtube.com/user/ethzurich",
+          "text": ""
+        }
+      ],
+      "discoveredCalendarApis": [
+        "https://idapps.ethz.ch/pcm-pub-services/v2/entries?rs-first=0&rs-size=9999&filters%5B0%5D.min-till-end=0&filters%5B0%5D.max-till-start=999&lang=en&client-id=wcms&filters[0].cals=1&comp-ext=true"
+      ],
+      "discoveredIcsLinks": [],
+      "eventCount": 363
+    },
+    {
+      "id": "eth-arch-events",
+      "label": "Department of Architecture",
+      "affiliation": "D-ARCH",
+      "url": "https://arch.ethz.ch/en/news-und-veranstaltungen/veranstaltungen.html",
+      "status": "ok",
+      "warnings": [],
+      "socialProfiles": [
+        {
+          "url": "https://www.linkedin.com/school/d-arch-eth-zurich",
+          "text": ""
+        },
+        {
+          "url": "https://www.instagram.com/arch.ethz/",
+          "text": ""
+        },
+        {
+          "url": "https://www.facebook.com/eth.darch",
+          "text": ""
+        }
+      ],
+      "discoveredCalendarApis": [
+        "https://idapps.ethz.ch/pcm-pub-services/v2/entries?rs-first=0&rs-size=9999&filters%5B0%5D.org-units=02100wd&filters%5B0%5D.e-types=401,618,561,616,2,3,301,6,7,603,8,41,617,604,9,10,11,361,13,20,221,16,605,17,19,602,22&filters%5B0%5D.min-till-end=0&filters%5B0%5D.max-till-start=999&lang=en&client-id=wcms&filters[0].cals=1&comp-ext=true"
+      ],
+      "discoveredIcsLinks": [],
+      "eventCount": 28
+    },
+    {
+      "id": "eth-baug-events",
+      "label": "Department of Civil, Environmental and Geomatic Engineering",
+      "affiliation": "D-BAUG",
+      "url": "https://baug.ethz.ch/en/news-and-events/events.html",
+      "status": "ok",
+      "warnings": [],
+      "socialProfiles": [
+        {
+          "url": "https://www.linkedin.com/company/department-of-civil-environmental-and-geomatic-engineering-d-baug-eth-zurich/",
+          "text": ""
+        },
+        {
+          "url": "https://www.instagram.com/dbaug.ethz?igsh=MXE4OWMzZDB0NXZveQ%3D%3D&utm_source=qr",
+          "text": ""
+        }
+      ],
+      "discoveredCalendarApis": [
+        "https://idapps.ethz.ch/pcm-pub-services/v2/entries?filters%5B0%5D.min-till-end=0&filters%5B0%5D.org-units=02115wd&rs-first=0&rs-size=9999&lang=en&client-id=wcms&filters[0].cals=1&comp-ext=true"
+      ],
+      "discoveredIcsLinks": [],
+      "eventCount": 26
+    },
+    {
+      "id": "eth-bsse-events",
+      "label": "Department of Biosystems Science and Engineering",
+      "affiliation": "D-BSSE",
+      "url": "https://bsse.ethz.ch/news-and-events/events.html",
+      "status": "ok",
+      "warnings": [],
+      "socialProfiles": [
+        {
+          "url": "https://bsky.app/profile/bsse.ethz.ch",
+          "text": ""
+        },
+        {
+          "url": "https://twitter.com/ETH_BSSE",
+          "text": ""
+        },
+        {
+          "url": "https://www.linkedin.com/school/eth-d-bsse",
+          "text": ""
+        },
+        {
+          "url": "https://www.youtube.com/channel/UCpL1A9fSlFjItQ1br_5tzpg",
+          "text": ""
+        }
+      ],
+      "discoveredCalendarApis": [
+        "https://idapps.ethz.ch/pcm-pub-services/v2/entries?filters%5B0%5D.min-till-end=0&filters%5B0%5D.org-units=02060wd&rs-first=0&rs-size=9999&lang=en&client-id=wcms&filters[0].cals=1&comp-ext=true"
+      ],
+      "discoveredIcsLinks": [],
+      "eventCount": 6
+    },
+    {
+      "id": "eth-chab-events",
+      "label": "Department of Chemistry and Applied Biosciences",
+      "affiliation": "D-CHAB",
+      "url": "https://chab.ethz.ch/en/news-and-events/events.html",
+      "status": "ok",
+      "warnings": [],
+      "socialProfiles": [
+        {
+          "url": "https://x.com/ETH_DCHAB",
+          "text": ""
+        },
+        {
+          "url": "https://www.instagram.com/eth_dchab/",
+          "text": ""
+        },
+        {
+          "url": "https://www.youtube.com/channel/UCrE7NKnnAL8JuE-Yg3o3Cag",
+          "text": ""
+        },
+        {
+          "url": "https://www.linkedin.com/company/eth-d-chab",
+          "text": ""
+        }
+      ],
+      "discoveredCalendarApis": [
+        "https://idapps.ethz.ch/pcm-pub-services/v2/entries?filters%5B0%5D.min-till-end=0&filters%5B0%5D.org-units=02020wd,02021wd,02513wd,02514wd,02515wd,02516wd,02534wd,02543wd&rs-first=0&rs-size=9999&lang=en&client-id=wcms&filters[0].cals=1&comp-ext=true"
+      ],
+      "discoveredIcsLinks": [],
+      "eventCount": 34
+    },
+    {
+      "id": "eth-cs-events",
+      "label": "Department of Computer Science",
+      "affiliation": "D-INFK",
+      "url": "https://inf.ethz.ch/news-and-events/events.html",
+      "status": "ok",
+      "warnings": [],
+      "socialProfiles": [
+        {
+          "url": "https://www.linkedin.com/school/csateth",
+          "text": ""
+        },
+        {
+          "url": "https://bsky.app/profile/csateth.bsky.social",
+          "text": ""
+        },
+        {
+          "url": "https://www.facebook.com/ETHInformatik/",
+          "text": ""
+        },
+        {
+          "url": "https://x.com/csateth",
+          "text": ""
+        },
+        {
+          "url": "https://www.youtube.com/user/ETHInformatik",
+          "text": ""
+        }
+      ],
+      "discoveredCalendarApis": [
+        "https://www.bi.id.ethz.ch/pcm-open-services/services/v2/entries?rs-first=0&rs-size=9999&lang=en&filters[0].cals=1&filters[0].org-units=02150wd&filters[0].min-till-end=0&filters[0].max-till-start=7&client-id=anonymous",
+        "https://www.bi.id.ethz.ch/pcm-open-services/",
+        "https://idapps.ethz.ch/pcm-pub-services/v2/entries?filters%5B0%5D.min-till-end=0&filters%5B0%5D.org-units=02150wd&rs-first=0&rs-size=9999&lang=en&client-id=wcms&filters[0].cals=1&comp-ext=true"
+      ],
+      "discoveredIcsLinks": [],
+      "eventCount": 15
+    },
+    {
+      "id": "eth-eaps-events",
+      "label": "Department of Earth and Planetary Sciences",
+      "affiliation": "D-EAPS",
+      "url": "https://eaps.ethz.ch/en/",
+      "status": "ok",
+      "warnings": [
+        "No public ETH calendar API link discovered on this page.",
+        "Only page-level fallback item available; this source likely needs a custom extractor."
+      ],
+      "socialProfiles": [
+        {
+          "url": "https://www.linkedin.com/company/eth-eaps/",
+          "text": ""
+        },
+        {
+          "url": "https://www.instagram.com/eth_eaps/",
+          "text": ""
+        },
+        {
+          "url": "https://bsky.app/profile/eth-eaps.bsky.social",
+          "text": ""
+        },
+        {
+          "url": "https://www.youtube.com/@ETH_EAPS",
+          "text": ""
+        },
+        {
+          "url": "https://www.facebook.com/ETH.EAPS",
+          "text": ""
+        }
+      ],
+      "discoveredCalendarApis": [],
+      "discoveredIcsLinks": [],
+      "eventCount": 1
+    },
+    {
+      "id": "eth-hest-events",
+      "label": "Department of Health Sciences and Technology",
+      "affiliation": "D-HEST",
+      "url": "https://hest.ethz.ch/en/",
+      "status": "ok",
+      "warnings": [
+        "No public ETH calendar API link discovered on this page."
+      ],
+      "socialProfiles": [
+        {
+          "url": "https://www.youtube.com/channel/UCM_etCgMyCCjZMhjiFNGMdQ",
+          "text": ""
+        },
+        {
+          "url": "https://www.linkedin.com/company/dhest/",
+          "text": ""
+        }
+      ],
+      "discoveredCalendarApis": [],
+      "discoveredIcsLinks": [],
+      "eventCount": 1
+    },
+    {
+      "id": "eth-itet-events",
+      "label": "Department of Information Technology and Electrical Engineering",
+      "affiliation": "D-ITET",
+      "url": "https://ee.ethz.ch/news-and-events/events.html",
+      "status": "ok",
+      "warnings": [],
+      "socialProfiles": [
+        {
+          "url": "https://www.youtube.com/user/ElektrotechnikETH",
+          "text": ""
+        },
+        {
+          "url": "https://www.linkedin.com/company/eth-zurich-department-of-information-technology-and-electrical-engineering",
+          "text": ""
+        },
+        {
+          "url": "https://www.instagram.com/eth_ditet/",
+          "text": ""
+        }
+      ],
+      "discoveredCalendarApis": [
+        "https://idapps.ethz.ch/pcm-pub-services/v2/entries?rs-first=0&rs-size=9999&filters%5B0%5D.org-units=02140wd&filters%5B0%5D.min-till-end=0&filters%5B0%5D.max-till-start=999&lang=en&client-id=wcms&filters[0].cals=1&comp-ext=true"
+      ],
+      "discoveredIcsLinks": [],
+      "eventCount": 15
+    },
+    {
+      "id": "eth-math-events",
+      "label": "Department of Mathematics",
+      "affiliation": "D-MATH",
+      "url": "https://math.ethz.ch/news-and-events/events.html",
+      "status": "ok",
+      "warnings": [
+        "No public ETH calendar API link discovered on this page.",
+        "Only page-level fallback item available; this source likely needs a custom extractor."
+      ],
+      "socialProfiles": [
+        {
+          "url": "https://www.youtube.com/channel/UCeeXxSn6Z-5unwjGsqc5R9A",
+          "text": ""
+        },
+        {
+          "url": "https://x.com/eth_math",
+          "text": ""
+        }
+      ],
+      "discoveredCalendarApis": [],
+      "discoveredIcsLinks": [],
+      "eventCount": 1
+    },
+    {
+      "id": "eth-matl-events",
+      "label": "Department of Materials",
+      "affiliation": "D-MATL",
+      "url": "https://mat.ethz.ch/news-and-events/events.html",
+      "status": "ok",
+      "warnings": [],
+      "socialProfiles": [
+        {
+          "url": "https://x.com/ETH_materials",
+          "text": ""
+        },
+        {
+          "url": "https://www.instagram.com/eth_materials/",
+          "text": ""
+        },
+        {
+          "url": "https://www.youtube.com/channel/UCw8Mk4Z_u5iVd4T-xTY_ayg",
+          "text": ""
+        }
+      ],
+      "discoveredCalendarApis": [
+        "https://idapps.ethz.ch/pcm-pub-services/v2/entries?rs-first=0&rs-size=9999&filters%5B0%5D.org-units=02160wd&filters%5B0%5D.min-till-end=0&filters%5B0%5D.max-till-start=999&lang=en&client-id=wcms&filters[0].cals=1&comp-ext=true"
+      ],
+      "discoveredIcsLinks": [],
+      "eventCount": 2
+    },
+    {
+      "id": "eth-mavt-events",
+      "label": "Department of Mechanical and Process Engineering",
+      "affiliation": "D-MAVT",
+      "url": "https://mavt.ethz.ch/news-and-events/events.html",
+      "status": "ok",
+      "warnings": [],
+      "socialProfiles": [
+        {
+          "url": "https://www.linkedin.com/company/mavt-ethz/",
+          "text": ""
+        },
+        {
+          "url": "https://www.instagram.com/eth_dmavt/",
+          "text": ""
+        },
+        {
+          "url": "https://www.youtube.com/c/dmavtethzurich",
+          "text": ""
+        }
+      ],
+      "discoveredCalendarApis": [
+        "https://idapps.ethz.ch/pcm-pub-services/v2/entries?filters%5B0%5D.min-till-end=0&filters%5B0%5D.org-units=02130wd&rs-first=0&rs-size=9999&lang=en&client-id=wcms&filters[0].cals=1&comp-ext=true"
+      ],
+      "discoveredIcsLinks": [],
+      "eventCount": 27
+    },
+    {
+      "id": "eth-mtec-events",
+      "label": "Department of Management, Technology, and Economics",
+      "affiliation": "D-MTEC",
+      "url": "https://mtec.ethz.ch/news-and-events/events.html",
+      "status": "ok",
+      "warnings": [],
+      "socialProfiles": [
+        {
+          "url": "https://www.linkedin.com/company/mtec-ethzurich",
+          "text": ""
+        },
+        {
+          "url": "https://x.com/d_mtec",
+          "text": ""
+        }
+      ],
+      "discoveredCalendarApis": [
+        "https://idapps.ethz.ch/pcm-pub-services/v2/entries?filters%5B0%5D.max-till-start=0&filters%5B0%5D.min-till-end=0&filters%5B0%5D.org-units=02120wd&rs-first=0&rs-size=9999&lang=en&client-id=wcms&filters[0].cals=1&comp-ext=true"
+      ],
+      "discoveredIcsLinks": [],
+      "eventCount": 1
+    },
+    {
+      "id": "eth-phys-events",
+      "label": "Department of Physics",
+      "affiliation": "D-PHYS",
+      "url": "https://www.phys.ethz.ch/news-and-events/seminars-colloquia.html",
+      "status": "ok",
+      "warnings": [],
+      "socialProfiles": [
+        {
+          "url": "https://www.linkedin.com/company/98337958",
+          "text": ""
+        },
+        {
+          "url": "https://www.youtube.com/user/DPHYS/videos",
+          "text": ""
+        },
+        {
+          "url": "https://www.instagram.com/eth_dphys/",
+          "text": ""
+        }
+      ],
+      "discoveredCalendarApis": [
+        "https://idapps.ethz.ch/pcm-pub-services/v2/entries?filters%5B0%5D.max-till-start=360&filters%5B0%5D.min-till-end=0&filters%5B0%5D.org-units=02010wd,02505wd,02510wd,02511wd,02532wd&rs-first=0&rs-size=9999&lang=en&client-id=wcms&filters[0].cals=1&comp-ext=true"
+      ],
+      "discoveredIcsLinks": [],
+      "eventCount": 8
+    },
+    {
+      "id": "eth-usys-events",
+      "label": "Department of Environmental Systems Science",
+      "affiliation": "D-USYS",
+      "url": "https://usys.ethz.ch/en/",
+      "status": "ok",
+      "warnings": [
+        "No public ETH calendar API link discovered on this page."
+      ],
+      "socialProfiles": [
+        {
+          "url": "https://www.linkedin.com/company/usys-ethz/",
+          "text": ""
+        },
+        {
+          "url": "https://twitter.com/usys_ethzh",
+          "text": ""
+        },
+        {
+          "url": "https://www.youtube.com/channel/UCwhNJuM10s_34LHT60h7dCw",
+          "text": ""
+        },
+        {
+          "url": "https://www.instagram.com/ethz_dusys/",
+          "text": ""
+        },
+        {
+          "url": "https://bsky.app/profile/usyseth.bsky.social",
+          "text": ""
+        }
+      ],
+      "discoveredCalendarApis": [],
+      "discoveredIcsLinks": [],
+      "eventCount": 1
+    },
+    {
+      "id": "eth-entrepreneurship-events",
+      "label": "ETH Entrepreneurship",
+      "affiliation": "ETH Entrepreneurship",
+      "url": "https://entrepreneurship.ethz.ch/events/events.html",
+      "status": "ok",
+      "warnings": [],
+      "socialProfiles": [
+        {
+          "url": "https://www.linkedin.com/company/27104378/",
+          "text": ""
+        },
+        {
+          "url": "https://www.instagram.com/eth_entrepreneurship/",
+          "text": ""
+        },
+        {
+          "url": "https://www.youtube.com/channel/UCVyYM1QaUkEc4sQe0V1fQMQ",
+          "text": ""
+        },
+        {
+          "url": "https://www.facebook.com/ETHentrepreneurship",
+          "text": ""
+        }
+      ],
+      "discoveredCalendarApis": [
+        "https://idapps.ethz.ch/pcm-pub-services/v2/entries?rs-first=0&rs-size=9999&filters%5B0%5D.org-units=06245wd&filters%5B0%5D.min-till-end=0&filters%5B0%5D.max-till-start=999&lang=en&client-id=wcms&filters[0].cals=1&comp-ext=true"
+      ],
+      "discoveredIcsLinks": [],
+      "eventCount": 12
+    },
+    {
+      "id": "eth-focusterra-events",
+      "label": "focusTerra Exhibitions and Events",
+      "affiliation": "D-EAPS",
+      "url": "https://eaps.ethz.ch/en/events/focusterra.html",
+      "status": "ok",
+      "warnings": [],
+      "socialProfiles": [
+        {
+          "url": "https://www.facebook.com/focusTerra",
+          "text": "external page focusTerra on Facebook"
+        },
+        {
+          "url": "https://www.instagram.com/focusterra_eth/",
+          "text": "external page focusTerra on Instagram"
+        },
+        {
+          "url": "https://www.linkedin.com/company/eth-eaps/",
+          "text": ""
+        },
+        {
+          "url": "https://www.instagram.com/eth_eaps/",
+          "text": ""
+        },
+        {
+          "url": "https://bsky.app/profile/eth-eaps.bsky.social",
+          "text": ""
+        },
+        {
+          "url": "https://www.youtube.com/@ETH_EAPS",
+          "text": ""
+        },
+        {
+          "url": "https://www.facebook.com/ETH.EAPS",
+          "text": ""
+        }
+      ],
+      "discoveredCalendarApis": [
+        "https://idapps.ethz.ch/pcm-pub-services/v2/entries?filters%5B0%5D.max-till-start=180&filters%5B0%5D.min-till-end=0&filters%5B0%5D.org-units=08588wd&filters%5B0%5D.e-types=7,13,41,301,22,561&rs-first=0&rs-size=10&lang=en&client-id=wcms&filters[0].cals=1&comp-ext=true"
+      ],
+      "discoveredIcsLinks": [],
+      "eventCount": 10
+    },
+    {
+      "id": "eth-global-events",
+      "label": "ETH Global Events",
+      "affiliation": "ETH Global",
+      "url": "https://ethz.ch/en/the-eth-zurich/global/events/global-events-calendar.html",
+      "status": "ok",
+      "warnings": [],
+      "socialProfiles": [
+        {
+          "url": "https://www.linkedin.com/school/eth-zurich/",
+          "text": ""
+        },
+        {
+          "url": "https://www.instagram.com/ethzurich/",
+          "text": ""
+        },
+        {
+          "url": "https://www.facebook.com/eth/",
+          "text": ""
+        },
+        {
+          "url": "https://www.youtube.com/user/ethzurich",
+          "text": ""
+        }
+      ],
+      "discoveredCalendarApis": [
+        "https://idapps.ethz.ch/pcm-pub-services/v2/entries?rs-first=0&rs-size=9999&filters%5B0%5D.org-units=06204wd,00029wd,02074wd&filters%5B0%5D.ends-not-before=2017-01-01&filters%5B0%5D.starts-not-after=2024-12-31&lang=en&client-id=wcms&filters[0].cals=1&comp-ext=true"
+      ],
+      "discoveredIcsLinks": [],
+      "eventCount": 107
+    },
+    {
+      "id": "eth-istp-events",
+      "label": "ISTP Events",
+      "affiliation": "ISTP",
+      "url": "https://istp.ethz.ch/events.ethz_search.html",
+      "status": "ok",
+      "warnings": [],
+      "socialProfiles": [
+        {
+          "url": "https://www.linkedin.com/company/istp_eth/",
+          "text": ""
+        },
+        {
+          "url": "https://www.instagram.com/eth_istp/",
+          "text": ""
+        },
+        {
+          "url": "https://www.youtube.com/channel/UCNo4cM7cVbxirn_G5UmDuSQ",
+          "text": ""
+        }
+      ],
+      "discoveredCalendarApis": [
+        "https://idapps.ethz.ch/pcm-pub-services/v2/entries?filters%5B0%5D.min-till-end=0&filters%5B0%5D.org-units=02045wd,02610wd,02890wd&rs-first=0&rs-size=9999&lang=en&client-id=wcms&filters[0].cals=1&comp-ext=true"
+      ],
+      "discoveredIcsLinks": [],
+      "eventCount": 12
+    },
+    {
+      "id": "eth-library-events",
+      "label": "ETH Library Events",
+      "affiliation": "ETH Library",
+      "url": "https://library.ethz.ch/ueber-uns-und-standorte/veranstaltungen.html",
+      "status": "ok",
+      "warnings": [],
+      "socialProfiles": [
+        {
+          "url": "https://www.youtube.com/playlist?list=PLmbz3oRqGMsviCXkDtqRyOoBuaLHJLVsX",
+          "text": "externe Seite YouTube-Kanal"
+        },
+        {
+          "url": "https://www.linkedin.com/company/eth-bibliothek/",
+          "text": ""
+        },
+        {
+          "url": "https://www.instagram.com/eth_library/?hl=de",
+          "text": ""
+        },
+        {
+          "url": "https://www.facebook.com/ETHBibliothek/",
+          "text": ""
+        },
+        {
+          "url": "https://www.youtube.com/user/ETHBibliothek",
+          "text": ""
+        }
+      ],
+      "discoveredCalendarApis": [
+        "https://idapps.ethz.ch/pcm-pub-services/v2/entries?rs-first=0&rs-size=9999&filters%5B0%5D.org-units=00060wd&filters%5B0%5D.e-types=561,401,301,6,7,603,8,41,2,3,604,9,10,11,361,13,20,221,16,605,17,19,602,22&filters%5B0%5D.min-till-end=0&filters%5B0%5D.max-till-start=999&lang=de&client-id=wcms&filters[0].cals=1&comp-ext=true",
+        "https://idapps.ethz.ch/pcm-pub-services/v2/entries?rs-first=0&rs-size=9999&filters%5B0%5D.org-units=00060wd&filters%5B0%5D.e-types=4&filters%5B0%5D.min-till-end=0&filters%5B0%5D.max-till-start=999&lang=de&client-id=wcms&filters[0].cals=1&comp-ext=true"
+      ],
+      "discoveredIcsLinks": [],
+      "eventCount": 35
+    },
+    {
+      "id": "eth-map-events",
+      "label": "Materials and Processes Calendar",
+      "affiliation": "MaP",
+      "url": "https://map.ethz.ch/news-events/events.html",
+      "status": "ok",
+      "warnings": [
+        "No public ETH calendar API link discovered on this page."
+      ],
+      "socialProfiles": [
+        {
+          "url": "https://www.linkedin.com/company/competence-center-materials-and-processes-ethz",
+          "text": ""
+        }
+      ],
+      "discoveredCalendarApis": [],
+      "discoveredIcsLinks": [],
+      "eventCount": 20
+    },
+    {
+      "id": "eth-quantum-center-events",
+      "label": "ETH Quantum Center",
+      "affiliation": "Quantum Center",
+      "url": "https://qc.ethz.ch/news-events/events-calendar.html",
+      "status": "ok",
+      "warnings": [
+        "No public ETH calendar API link discovered on this page."
+      ],
+      "socialProfiles": [
+        {
+          "url": "https://www.linkedin.com/company/eth-quantum-center/",
+          "text": ""
+        },
+        {
+          "url": "https://bsky.app/profile/ethz-qc.bsky.social",
+          "text": ""
+        },
+        {
+          "url": "https://www.youtube.com/channel/UCJa7n2dv7ZtdG--Ki-oMNHw",
+          "text": ""
+        }
+      ],
+      "discoveredCalendarApis": [],
+      "discoveredIcsLinks": [],
+      "eventCount": 4
+    }
+  ]
+}

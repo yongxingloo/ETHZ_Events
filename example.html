@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary": "#ffb59c",
+                        "on-surface-variant": "#c8c5ce",
+                        "on-tertiary-fixed-variant": "#832700",
+                        "on-secondary-fixed": "#23005c",
+                        "inverse-surface": "#e0e3e5",
+                        "primary": "#c4c3ec",
+                        "on-secondary": "#3c0091",
+                        "secondary": "#d0bcff",
+                        "primary-fixed-dim": "#c4c3ec",
+                        "surface-tint": "#c4c3ec",
+                        "outline-variant": "#47464e",
+                        "primary-fixed": "#e2dfff",
+                        "surface-container-high": "#272a2c",
+                        "on-error-container": "#ffdad6",
+                        "on-secondary-container": "#c4abff",
+                        "on-tertiary-fixed": "#390c00",
+                        "on-error": "#690005",
+                        "on-tertiary-container": "#e34c05",
+                        "secondary-fixed-dim": "#d0bcff",
+                        "surface-bright": "#363a3b",
+                        "surface": "#101415",
+                        "primary-container": "#121232",
+                        "secondary-container": "#571bc1",
+                        "on-primary-container": "#7d7ca2",
+                        "surface-container-low": "#191c1e",
+                        "on-surface": "#e0e3e5",
+                        "surface-dim": "#101415",
+                        "on-secondary-fixed-variant": "#5516be",
+                        "on-primary-fixed-variant": "#434366",
+                        "surface-variant": "#323537",
+                        "outline": "#928f98",
+                        "error-container": "#93000a",
+                        "tertiary-fixed-dim": "#ffb59c",
+                        "tertiary-container": "#2f0900",
+                        "background": "#101415",
+                        "on-background": "#e0e3e5",
+                        "surface-container-highest": "#323537",
+                        "surface-container": "#1d2022",
+                        "surface-container-lowest": "#0b0f10",
+                        "on-primary": "#2d2d4e",
+                        "error": "#ffb4ab",
+                        "inverse-on-surface": "#2d3133",
+                        "on-tertiary": "#5c1900",
+                        "on-primary-fixed": "#181838",
+                        "secondary-fixed": "#e9ddff",
+                        "inverse-primary": "#5b5b7f",
+                        "tertiary-fixed": "#ffdbcf"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "16px",
+                        "margin-mobile": "20px",
+                        "xs": "4px",
+                        "margin-desktop": "48px",
+                        "sm": "8px",
+                        "lg": "24px",
+                        "md": "16px",
+                        "unit": "4px",
+                        "xl": "32px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Plus Jakarta Sans"],
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "headline-lg-mobile": ["Plus Jakarta Sans"],
+                        "label-sm": ["Plus Jakarta Sans"],
+                        "label-md": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Plus Jakarta Sans"],
+                        "display-lg": ["Plus Jakarta Sans"],
+                        "body-lg": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "700"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(196, 195, 236, 0.06);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .glass-card-hover:hover {
+            background: rgba(196, 195, 236, 0.12);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #c4c3ec, #d0bcff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md min-h-screen">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-gutter py-sm bg-surface/60 backdrop-blur-xl border-b border-white/10 shadow-sm">
+<div class="font-headline-md text-headline-md font-bold text-primary tracking-tight">UrbanPulse</div>
+<div class="hidden md:flex items-center gap-xl">
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200" href="#">Discover</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200" href="#">Map</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1" href="#">My Dashboard</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200" href="#">Settings</a>
+</div>
+<div class="flex items-center gap-md">
+<button class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors active:scale-95">notifications</button>
+<button class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors active:scale-95">person</button>
+</div>
+</nav>
+<!-- SideNavBar (Desktop Only) -->
+<aside class="hidden md:flex flex-col h-screen fixed left-0 top-0 z-40 bg-surface-container dark:bg-surface-dim w-64 pt-24 px-md pb-xl">
+<div class="mb-xl px-sm">
+<div class="flex items-center gap-md mb-xs">
+<div class="w-12 h-12 rounded-full flex items-center justify-center bg-secondary-container text-on-secondary-container">
+<span class="material-symbols-outlined">person</span>
+</div>
+<div>
+<h3 class="font-label-md text-label-md text-on-surface">Urban Explorer</h3>
+<p class="text-label-sm font-label-sm text-secondary">City Level 5</p>
+</div>
+</div>
+</div>
+<nav class="flex-1 space-y-sm">
+<a class="flex items-center gap-md text-on-surface-variant px-md py-sm hover:bg-surface-variant/50 transition-all hover:translate-x-1 duration-200 rounded-xl" href="#">
+<span class="material-symbols-outlined">explore</span>
+<span class="font-label-md text-label-md">Discover</span>
+</a>
+<a class="flex items-center gap-md text-on-surface-variant px-md py-sm hover:bg-surface-variant/50 transition-all hover:translate-x-1 duration-200 rounded-xl" href="#">
+<span class="material-symbols-outlined">map</span>
+<span class="font-label-md text-label-md">Map</span>
+</a>
+<a class="flex items-center gap-md bg-secondary-container text-on-secondary-container rounded-xl px-md py-sm transition-all hover:translate-x-1 duration-200" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">dashboard</span>
+<span class="font-label-md text-label-md">My Dashboard</span>
+</a>
+<a class="flex items-center gap-md text-on-surface-variant px-md py-sm hover:bg-surface-variant/50 transition-all hover:translate-x-1 duration-200 rounded-xl" href="#">
+<span class="material-symbols-outlined">add_circle</span>
+<span class="font-label-md text-label-md">Submit Event</span>
+</a>
+<a class="flex items-center gap-md text-on-surface-variant px-md py-sm hover:bg-surface-variant/50 transition-all hover:translate-x-1 duration-200 rounded-xl" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="font-label-md text-label-md">Settings</span>
+</a>
+</nav>
+<div class="mt-auto space-y-sm">
+<div class="bg-primary-container p-md rounded-xl mb-md">
+<p class="font-label-sm text-on-primary-container mb-sm">Level up to Pro for exclusive event access.</p>
+<button class="w-full bg-secondary text-on-secondary font-label-md py-sm rounded-lg active:scale-95 transition-transform">Get Premium</button>
+</div>
+<a class="flex items-center gap-md text-on-surface-variant px-md py-sm hover:bg-surface-variant/50 rounded-xl transition-all" href="#">
+<span class="material-symbols-outlined">help</span>
+<span class="font-label-md text-label-md">Help</span>
+</a>
+<a class="flex items-center gap-md text-on-surface-variant px-md py-sm hover:bg-surface-variant/50 rounded-xl transition-all" href="#">
+<span class="material-symbols-outlined">logout</span>
+<span class="font-label-md text-label-md">Logout</span>
+</a>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="pt-24 pb-32 px-margin-mobile md:pl-72 md:pr-margin-desktop min-h-screen">
+<!-- Header Section -->
+<header class="mb-xl">
+<h1 class="font-display-lg text-display-lg text-on-surface mb-xs">Welcome back, <span class="text-gradient">Alex</span></h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">The city's heartbeat is sync'd to your rhythm today.</p>
+</header>
+<!-- Bento Grid Dashboard -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-lg">
+<!-- Profile Card & Stats (4 columns) -->
+<div class="lg:col-span-4 space-y-lg">
+<div class="glass-card p-xl rounded-xl">
+<div class="flex flex-col items-center text-center mb-lg">
+<div class="relative mb-md">
+<div class="w-24 h-24 rounded-full border-4 border-secondary/20 flex items-center justify-center bg-surface-variant">
+<span class="material-symbols-outlined text-4xl text-secondary">person</span>
+</div>
+<span class="absolute bottom-0 right-0 bg-tertiary text-on-tertiary-fixed-variant text-[10px] font-bold px-2 py-1 rounded-full border-2 border-surface">LVL 5</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Alex River</h2>
+<p class="text-secondary font-label-md tracking-widest uppercase">Platinum Member</p>
+</div>
+<div class="space-y-md">
+<div class="flex justify-between items-center p-md bg-surface-variant/30 rounded-lg">
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-primary">local_fire_department</span>
+<span class="font-label-md text-on-surface">Experience Points</span>
+</div>
+<span class="font-bold text-primary">12,450</span>
+</div>
+<div class="flex justify-between items-center p-md bg-surface-variant/30 rounded-lg">
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-secondary">confirmation_number</span>
+<span class="font-label-md text-on-surface">Attended Events</span>
+</div>
+<span class="font-bold text-secondary">48</span>
+</div>
+</div>
+<div class="mt-xl">
+<h3 class="font-label-md text-on-surface-variant mb-md uppercase tracking-wider">City Badges</h3>
+<div class="flex flex-wrap gap-sm">
+<div class="w-10 h-10 rounded-full bg-tertiary/20 flex items-center justify-center border border-tertiary/40" title="Night Owl">
+<span class="material-symbols-outlined text-tertiary text-sm" style="font-variation-settings: 'FILL' 1;">dark_mode</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center border border-primary/40" title="Sound Hunter">
+<span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">music_note</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-secondary/20 flex items-center justify-center border border-secondary/40" title="Networker">
+<span class="material-symbols-outlined text-secondary text-sm" style="font-variation-settings: 'FILL' 1;">groups</span>
+</div>
+</div>
+</div>
+</div>
+<!-- My Calendar View -->
+<div class="glass-card p-xl rounded-xl">
+<div class="flex justify-between items-center mb-lg">
+<h3 class="font-headline-md text-headline-md text-on-surface">My Calendar</h3>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer">calendar_today</span>
+</div>
+<div class="space-y-md">
+<div class="flex items-center gap-md p-md bg-surface-variant/20 rounded-lg border border-white/5">
+<div class="flex flex-col items-center justify-center w-12 h-12 bg-primary/20 text-primary rounded-lg shrink-0">
+<span class="text-[10px] font-bold uppercase">Oct</span>
+<span class="text-lg font-bold">14</span>
+</div>
+<div>
+<h4 class="font-label-md text-on-surface">Neon Pulse Rave</h4>
+<p class="text-label-sm text-on-surface-variant">Warehouse 7 • 10:00 PM</p>
+</div>
+</div>
+<div class="flex items-center gap-md p-md bg-surface-variant/10 rounded-lg border border-white/5 opacity-60">
+<div class="flex flex-col items-center justify-center w-12 h-12 bg-surface-variant text-on-surface-variant rounded-lg shrink-0">
+<span class="text-[10px] font-bold uppercase">Oct</span>
+<span class="text-lg font-bold">18</span>
+</div>
+<div>
+<h4 class="font-label-md text-on-surface">Digital Arts Expo</h4>
+<p class="text-label-sm text-on-surface-variant">Cyber Plaza • 2:00 PM</p>
+</div>
+</div>
+</div>
+<button class="w-full mt-xl text-primary font-label-md hover:underline py-2 border border-primary/20 rounded-lg hover:bg-primary/5 transition-colors">View Full Calendar</button>
+</div>
+</div>
+<!-- Personalized Feed (8 columns) -->
+<div class="lg:col-span-8 space-y-lg">
+<!-- For You Section -->
+<section>
+<div class="flex justify-between items-center mb-md">
+<h3 class="font-headline-md text-headline-md text-on-surface">For You</h3>
+<span class="px-3 py-1 bg-secondary text-on-secondary rounded-full text-[10px] font-bold uppercase">New Matches</span>
+</div>
+<div class="space-y-sm">
+<!-- Text-based match cards -->
+<div class="glass-card p-lg rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-md hover:bg-surface-variant/30 transition-colors cursor-pointer border border-white/10">
+<div class="flex items-center gap-md">
+<div class="w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">music_note</span>
+</div>
+<div>
+<h4 class="font-headline-md text-on-surface text-lg">Midnight Skyline Sessions</h4>
+<div class="flex items-center gap-md text-on-surface-variant text-label-sm mt-1">
+<span class="flex items-center gap-xs"><span class="material-symbols-outlined text-xs">location_on</span> Rooftop Lounge</span>
+<span class="flex items-center gap-xs"><span class="material-symbols-outlined text-xs">near_me</span> 12km away</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-md">
+<span class="text-primary font-bold text-label-md">98% Match</span>
+<button class="bg-primary/20 text-primary px-4 py-2 rounded-lg font-label-md hover:bg-primary/30 transition-colors">Details</button>
+</div>
+</div>
+<div class="glass-card p-lg rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-md hover:bg-surface-variant/30 transition-colors cursor-pointer border border-white/10">
+<div class="flex items-center gap-md">
+<div class="w-10 h-10 rounded-lg bg-tertiary/20 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined">terminal</span>
+</div>
+<div>
+<h4 class="font-headline-md text-on-surface text-lg">Cyber Future Workshop</h4>
+<div class="flex items-center gap-md text-on-surface-variant text-label-sm mt-1">
+<span class="flex items-center gap-xs"><span class="material-symbols-outlined text-xs">location_on</span> The Hub</span>
+<span class="flex items-center gap-xs"><span class="material-symbols-outlined text-xs">near_me</span> 4km away</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-md">
+<span class="text-tertiary font-bold text-label-md">92% Match</span>
+<button class="bg-tertiary/20 text-tertiary px-4 py-2 rounded-lg font-label-md hover:bg-tertiary/30 transition-colors">Details</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Past Events List -->
+<section>
+<div class="flex justify-between items-center mb-md">
+<h3 class="font-headline-md text-headline-md text-on-surface">Past Events</h3>
+<a class="text-on-surface-variant text-label-md hover:text-primary" href="#">List History</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+<div class="p-md bg-surface-container rounded-xl border border-outline-variant/30 hover:border-primary/50 transition-colors">
+<div class="flex items-center gap-sm mb-xs">
+<span class="material-symbols-outlined text-on-surface-variant text-sm">event</span>
+<p class="text-[10px] text-on-surface-variant font-bold uppercase tracking-widest">Sept 22, 2024</p>
+</div>
+<h5 class="text-label-md text-on-surface font-bold truncate">Synthwave Night</h5>
+<p class="text-label-sm text-on-surface-variant mt-1">District X Venue</p>
+</div>
+<div class="p-md bg-surface-container rounded-xl border border-outline-variant/30 hover:border-primary/50 transition-colors">
+<div class="flex items-center gap-sm mb-xs">
+<span class="material-symbols-outlined text-on-surface-variant text-sm">event</span>
+<p class="text-[10px] text-on-surface-variant font-bold uppercase tracking-widest">Sept 15, 2024</p>
+</div>
+<h5 class="text-label-md text-on-surface font-bold truncate">Street Food Fair</h5>
+<p class="text-label-sm text-on-surface-variant mt-1">Central Market</p>
+</div>
+<div class="p-md bg-surface-container rounded-xl border border-outline-variant/30 hover:border-primary/50 transition-colors">
+<div class="flex items-center gap-sm mb-xs">
+<span class="material-symbols-outlined text-on-surface-variant text-sm">event</span>
+<p class="text-[10px] text-on-surface-variant font-bold uppercase tracking-widest">Aug 30, 2024</p>
+</div>
+<h5 class="text-label-md text-on-surface font-bold truncate">Urban Tech Meet</h5>
+<p class="text-label-sm text-on-surface-variant mt-1">Founders Hall</p>
+</div>
+</div>
+</section>
+</div>
+</div>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-3 bg-surface-container/80 backdrop-blur-2xl border-t border-white/5 shadow-[0_-4px_20px_rgba(0,0,0,0.5)] rounded-t-xl">
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:opacity-100 active:scale-90 transition-all duration-150" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-sm text-label-sm">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:opacity-100 active:scale-90 transition-all duration-150" href="#">
+<span class="material-symbols-outlined">location_on</span>
+<span class="font-label-sm text-label-sm">Map</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:opacity-100 active:scale-90 transition-all duration-150" href="#">
+<span class="material-symbols-outlined">bookmark</span>
+<span class="font-label-sm text-label-sm">Saved</span>
+</a>
+<a class="flex flex-col items-center justify-center text-primary scale-110 active:scale-90 transition-all duration-150" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">person</span>
+<span class="font-label-sm text-label-sm">Profile</span>
+</a>
+</nav>
+<!-- Footer -->
+<footer class="w-full py-xl px-margin-desktop mt-auto flex flex-col md:flex-row justify-between items-center gap-lg bg-surface-container-lowest border-t border-outline-variant">
+<div class="font-headline-md text-headline-md text-primary opacity-50">UrbanPulse</div>
+<div class="flex flex-wrap justify-center gap-lg">
+<a class="text-on-surface-variant font-label-sm text-label-sm hover:text-on-surface transition-colors" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant font-label-sm text-label-sm hover:text-on-surface transition-colors" href="#">Terms of Service</a>
+<a class="text-on-surface-variant font-label-sm text-label-sm hover:text-on-surface transition-colors" href="#">Contact Support</a>
+<a class="text-on-surface-variant font-label-sm text-label-sm hover:text-on-surface transition-colors" href="#">City Partners</a>
+</div>
+<div class="text-on-surface-variant font-label-sm text-label-sm">© 2024 UrbanPulse Energy. All rights reserved.</div>
+</footer>
+</body></html>

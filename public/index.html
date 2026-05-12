@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ETHZ Events Hub</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <main class="shell">
+      <section class="controls" aria-label="Event filters">
+        <div class="controls-row">
+          <input id="search" class="control-input control-search" type="search" placeholder="Search title, source, faculty, location">
+        </div>
+        <div id="faculty-toggles" class="faculty-toggles" aria-label="Faculty filters">
+          <button type="button" class="faculty-toggle is-active" data-faculty="">All</button>
+        </div>
+        <p id="result-count" class="result-count">Loading…</p>
+      </section>
+      <div id="event-grid" class="event-grid">
+        <p class="empty-state">Loading events…</p>
+      </div>
+    </main>
+
+    <script type="module" src="/app.js"></script>
+  </body>
+  </html>
