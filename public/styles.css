@@ -340,6 +340,15 @@ a {
   line-height: 1.25;
 }
 
+.event-title-link {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.event-title-link:hover {
+  color: var(--accent-2);
+}
+
 .event-summary,
 .event-link,
 dt {

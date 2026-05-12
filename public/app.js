@@ -95,7 +95,9 @@ function renderEventCard(event) {
         <div class="event-meta">
           <span class="badge faculty-label" data-faculty-key="${escapeAttribute(facultyKey)}">${escapeHtml(facultyLabel)}</span>
         </div>
-        <h3 class="event-title">${escapeHtml(event.title)}</h3>
+        <h3 class="event-title">
+          <a class="event-title-link" target="_blank" rel="noreferrer" href="${escapeAttribute(event.postingUrl)}">${escapeHtml(event.title)}</a>
+        </h3>
         <p class="event-summary">${escapeHtml(event.summary)}</p>
       </div>
       <div class="event-side">
